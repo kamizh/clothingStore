@@ -1,0 +1,27 @@
+.size_container {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.size_button {
+    padding: 10px 16px;
+    font-size: 16px;
+    background-color: white;
+    color: #565656;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+.size_button:hover {
+    border:  1px solid #565656;
+}
+
+.size_button:hover {
+    border-color: #aaa;
+}
+
+.size_button.active {
+    border: 1px solid #565656;
+}

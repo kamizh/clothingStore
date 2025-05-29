@@ -1,0 +1,149 @@
+.container {
+  width: 300px;
+  height: auto;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.container:hover {
+    transform: scale(1.02);
+}
+
+.container_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 15px;
+}
+
+.image {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.favorite_button {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  z-index: 2;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  padding: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.favorite_button:hover {
+  transform: scale(1.2);
+}
+
+.price_and_bag {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 10px;
+  margin-top: 12px;
+}
+
+.price {
+  margin: 0;
+  color: #1D1D1D;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.bag_button {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.brand, .name {
+  margin: 4px 10px 0;
+  font-size: 14px;
+  color: #565656;
+}
+
+.brand {
+  font-weight: 500;
+}
+
+.name {
+  font-weight: 400;
+  white-space: wrap;
+  line-height: 1.4;
+}
+
+.indicators {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.indicator {
+    background-color: #565656;
+    opacity: 0.5;
+    height: 1.5px;
+    border-radius: 5px;
+    flex: 1;
+}
+.choice_indicator {
+    background-color: #565656;
+    opacity: 0.9;
+    height: 1.5px;
+    border-radius: 5px;
+    flex: 1; 
+}
+
+
+
+.sale {
+  position: absolute;
+  top: 75%;
+  background-color: #ED1331;
+  font-size: 12px;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 85px;
+  height: 24px;
+  border-radius: 2px;
+  z-index: 2;
+}
+
+
+
+
+@media (max-width: 770px)
+{
+    .container {
+  width: 161px;
+  border-radius: 8px;
+  transition: transform 0.5s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.sale {
+  top: 0;
+}
+.image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+
+}
+
+

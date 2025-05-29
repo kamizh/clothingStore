@@ -1,0 +1,39 @@
+.type_clothes {
+    padding: 5%;
+    overflow: hidden; /* Скрываем лишний контент */
+    width: 100%;
+
+}
+.type_clothes_content {
+    overflow-x: auto;
+    scrollbar-width: none; /* Убираем стандартный скролл (Firefox) */
+    -ms-overflow-style: none; /* Убираем стандартный скролл (IE/Edge) */
+    scroll-snap-type: x mandatory; /* При пролистывании элементы центрируются */
+    touch-action: pan-x; /* Позволяет свайпать только горизонтально */
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start; /* Важно: убираем центрирование */
+    text-align: center;
+}
+.type_clothes_content::-webkit-scrollbar {
+    display: none; /* Убираем скролл в Chrome и Safari */
+}
+.link {
+    display:    flex;
+    justify-content: center;
+    background-color: #F1F1F1;
+    border-radius: 50%;
+    scroll-snap-align: center; /* Элементы центрируются при пролистывании */
+    width: 150px;
+    padding: 30px;
+}
+.text {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #1D1D1D;
+}
+.image {
+    width: 100px;
+    height: 85px;
+}

@@ -1,0 +1,87 @@
+﻿<Page x:Class="adminPanel.UserDetailPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      Title="UserDetailPage">
+
+    <Grid Background="#F5F5F5" >
+        <StackPanel Width="auto">
+            <Button Content="← Назад" 
+                    HorizontalAlignment="Left"
+                    Click="BackButton_Click"
+                    Background="#007ACC"
+                    Foreground="White"
+                    Padding="5 2"
+                    FontWeight="Bold"
+                    BorderThickness="0"
+                    Margin="0 0 0 20"
+                    Cursor="Hand"/>
+
+            <Border Background="White" CornerRadius="10" Padding="20" >
+                <StackPanel>
+                    <TextBlock Text="Информация о пользователе" 
+                               FontSize="24" 
+                               FontWeight="Bold" 
+                               Margin="0 0 0 20"/>
+
+                    <!-- Поля пользователя -->
+                    <StackPanel Margin="0 0 0 10">
+                        <TextBlock FontSize="18" Text="Id:" FontWeight="Bold"/>
+                        <TextBox Height="30" Text="{Binding Id}" IsReadOnly="True"/>
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 0 10">
+                        <TextBlock FontSize="18" Text="Фамилия:" FontWeight="Bold"/>
+                        <TextBox Height="30" Text="{Binding SurName}" />
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 0 10">
+                        <TextBlock FontSize="18" Text="Имя:" FontWeight="Bold"/>
+                        <TextBox Height="30" Text="{Binding Name}" />
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 0 10">
+                        <TextBlock  FontSize="18" Text="Email:" FontWeight="Bold"/>
+                        <TextBox IsReadOnly="True" Height="30" Text="{Binding Email}" />
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 0 10">
+                        <TextBlock FontSize="18" Text="Телефон:" FontWeight="Bold"/>
+                        <TextBox IsReadOnly="True" Height="30" Text="{Binding NumberPhone}" />
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 0 10">
+                        <TextBlock FontSize="18" Text="Статус:" FontWeight="Bold"/>
+                        <TextBox IsReadOnly="True" Height="30" Text="{Binding IsLocked}" />
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 0 10">
+                        <TextBlock FontSize="18" Text="Дата рождения:" FontWeight="Bold"/>
+                        <DatePicker Height="30" SelectedDate="{Binding Date}" />
+                    </StackPanel>
+
+                    <StackPanel Margin="0 0 20 20">
+                        <TextBlock FontSize="18" Text="Количество бонусов:" FontWeight="Bold"/>
+                        <TextBox Height="30" Text="{Binding BonusCount}" />
+                    </StackPanel>
+                    <Button Content="Сохранить изменения"
+                            Background="#FF1FA951"
+                            Foreground="White"
+                            Name="SaveChangeButton"
+                            Click="SaveChangeButton_Click"
+                            FontWeight="Bold"
+                            BorderThickness="0"
+                            Padding="10"
+                            Cursor="Hand"/>
+                    <Button Content="Удалить пользователя"
+                            Background="#DC3545"
+                            Foreground="White"
+                            FontWeight="Bold"
+                            BorderThickness="0"
+                            Padding="10"
+                            Click="DeleteButton_Click"
+                            Cursor="Hand"/>
+                </StackPanel>
+            </Border>
+        </StackPanel>
+    </Grid>
+</Page>

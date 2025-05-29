@@ -1,0 +1,246 @@
+.main {
+    width: 100%;
+}
+.main_container {
+    padding-left: 5%;
+    justify-content: center;
+    padding-right: 5%;
+    display: flex;
+    flex-grow: 1;
+
+}
+
+.box {
+    width: 100%;
+    padding-top: 3%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image {
+    position: relative;
+    width: 80%;
+    height: 100%;
+}
+
+.mobile {
+    display: none;
+}
+
+.box_green {
+    background-color: #13ED1C;
+}
+.box_yellow {
+    background-color: #FFF500;
+}
+.box_orange {
+    background-color: #FD6E06;
+}
+.center_elem {
+    z-index: 2;
+    position: absolute;
+    top: 55%;
+    width: 40%;
+    height: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.7); /* Полупрозрачный фон */
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.center_elem_content {
+    gap: 1.5rem;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.title {
+    padding: 0;
+    margin: 0;
+    font-weight: 400;
+    font-size: 64px;
+    color: #1D1D1D;
+
+}
+
+.text {
+    margin: 0;
+    font-size: 30px;
+    color: #1D1D1D;
+}
+
+.button {
+    background: black;
+    color: white;
+    padding: 2%;
+    border-radius: 25px;
+    font-size: 18px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    border: none;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: #1D1D1D;
+}
+@media (max-width: 1200px)
+{
+    .center_elem {
+
+        position: absolute;
+        top: 48%;
+        
+    }
+}
+@media (max-width: 1000px)
+{
+    .center_elem {
+
+        position: absolute;
+        top: 45%;
+        height: 40%;
+        
+    }
+    .center_elem_content {
+        gap: 1em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .title {
+        font-size: 45px;
+    }
+    
+}
+@media (max-width: 900px)
+{
+    .center_elem {
+
+        position: absolute;
+        top: 36%;
+        
+    }
+}
+@media (max-width: 840px)
+{
+    .center_elem {
+
+        position: absolute;
+        top: 33%;
+        height: 30%;
+    }
+    .title {
+        font-size: 38px;
+    }
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media (max-width : 700px)
+{
+    .center_elem {
+        width: 60%;
+        height: 70%;
+        position: absolute;
+        top: 55%;
+        height: 40%;
+        
+    }
+    .center_elem_content {
+        gap: 2em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .title {
+        font-size: 50px;
+    }
+    
+
+}
+.mobile_container {
+    width: 100%;
+    height: 80%;
+}
+.box_mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image_mobile {
+    height: 80%;
+    width: 70%;
+}
+.indicators {
+    top: 65%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    transition: background-color 0.3s;
+}
+
+.dot.active {
+    background-color: white;
+}
+@media (max-width : 550px)
+{
+    .image_mobile {
+        height: 80vh;
+        width: 40vh;
+    }
+    .mobile_container {
+        height: 80vh;
+    }
+    .center_elem {
+        width: 60%;
+        height: 70%;
+        position: absolute;
+        top: 50%;
+        height: 40%;
+        
+    }
+    .center_elem_content {
+        gap: 2em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .indicators {
+        top: 80%;
+    }
+    
+
+}
+.center_elem a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

@@ -1,0 +1,332 @@
+.white_panel {
+    background-color: #FCFCFC;
+    width: 100%;
+    height: 52px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+.hight_panel_text {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #565656;
+}
+.nav_panel {
+    width: 100%;
+    height: 72px;
+    background-color: #1D1D1D;
+}
+.nav_panel_content {
+    align-items: center;
+    color: #FFFFFF;
+    font-weight: 600;
+    display: flex;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.left_elems {
+    display: flex;
+    gap: 15%;
+    align-items: center;
+}
+.logo  {
+    font-weight: 700;
+    font-size: 20px;
+    color: #FFFFFF;
+}
+
+.city_box {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.nav_button a {
+    color: #FFFFFF;
+
+}
+.burger {
+    display: none;
+}
+
+.center_elems {
+}
+.list_elems {
+    display: flex;
+    justify-content: center;
+}
+.nav_button {
+    padding-left: 8%;
+    padding-right: 8%;
+    height: 100%;
+}
+.nav_button:hover {
+    height: 100%;
+    background-color: #2B2B2B;
+}
+
+.right_elems {
+    display: flex;
+    justify-content: space-between;
+    gap: 10%;
+}
+.sale_button {
+    background-color: #ED1331;
+    border-radius: 50px;
+    
+}
+.sale_button:hover {
+    background-color: #39060d;
+}
+.right_elem:hover {
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+
+.burger_menu_content {
+    color: #2B2B2B;
+}
+
+.search_box {
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    width: 80%;
+  }
+  
+  .search_box input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    padding: 8px;
+  }
+  
+  .search_box button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+  }
+  
+  .burger_menu {
+    z-index: 2000;
+    overflow-y: auto;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    width: 80%;
+    height: 100vh;
+    background: white;
+    transition: left 0.3s ease-in-out;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .burger_menu.open{
+    left: 0;
+  }
+  
+  .burger_button {
+    display: none;
+    color: #FFFFFF  ;
+    font-weight: 600;
+    font-size: 24px;
+    border: none;
+    background: none;
+    cursor: pointer;
+  }
+.close_button {
+    margin-left: 10%;
+    background: none;
+    border: none;
+    font-size: 11px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #565656;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.logo_burger {
+    color: #565656;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.burger_menu_content {
+   
+
+}
+
+.hight_elems {
+    color: #565656;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.hight_elems .city {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.city_box_burger {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.hight_line {
+    margin-top: 0.5em;
+    background-color: #DBDBDB;
+    width: 100%;
+    height: 1px;
+    margin-bottom: 5%;
+}
+.catalog_title {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    font-size: 15px;
+    color: #1D1D1D;
+}
+
+
+.catalog_elems a {
+    color: #1D1D1D;
+}
+.catalog_elems {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.sale_box {
+    padding-top: 10%;
+    padding-bottom: 10%;
+    display: flex;
+    justify-content: center;
+}
+.sale_text {
+    color: #ED1331;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.search_button {
+    background: none;
+    border: none;
+}
+
+.search_input {
+    border: none;
+    outline: none;
+    font-size: 16px;
+    flex: 1;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    background: white;
+    border-radius: 25px;
+    border: 1px solid #ddd;
+    width: 70vh;
+}
+
+.navigation_panel {
+    background-color: #FFFFFF;
+    width: 100%;
+}
+.navigation_panel_content {
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+    gap: 1.5em;
+    padding-bottom: 1em;
+}
+.navigation_elem {
+    color: #565656;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.navigation_elem:hover {
+    background-color: #c8c8c8;
+}
+
+
+@media (max-width: 900px)
+{
+
+    .search_button {
+        display: none;
+    }
+    .logo {
+         text-transform: uppercase;
+    }
+    .burger_button {
+        display: block;
+    }
+    .center_elems,.city_box {
+        display: none;
+    }
+    .navigation_panel {
+        display: none;
+    }
+    
+    
+
+}
+
+
+  
+  .exitContainer {
+    right: 10%;
+    position: absolute;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    padding: 10px;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 999;
+  }
+  
+  .exitButton {
+    display: block;
+    background-color: #1c1c1c;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s ease;
+  }
+  
+  .exitButton:hover {
+    background-color: #2c2c2c;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

@@ -1,0 +1,98 @@
+﻿<Page x:Class="adminPanel.AddEditPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:adminPanel"
+      mc:Ignorable="d" 
+      d:DesignHeight="800" d:DesignWidth="1200"
+      Title="AddEditPage"  Background="#1E1E1E">
+
+    <Grid Margin="40">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <Button Width="80" Height="25" HorizontalAlignment="Left" Content="Назад" Name="BackButton" Click="BackButton_Click"></Button>
+        <TextBlock HorizontalAlignment="Center" Text="Добавить товар" FontSize="24" Foreground="White" FontWeight="Bold" Margin="0 0 0 20"/>
+
+        <StackPanel Grid.Row="1" VerticalAlignment="Top" >
+
+            <!-- Product ComboBox -->
+            <StackPanel>
+                <TextBlock Text="Название" FontSize="18" Foreground="White" Margin="0 0 0 5"/>
+                <TextBox Height="40" FontSize="16" Text="{Binding Name}" Background="#2C2C2C" Foreground="White"/>
+
+            </StackPanel>
+
+            <!-- Price -->
+            <StackPanel>
+                <TextBlock FontSize="18" Text="Состав" Foreground="White" Margin="0 0 0 5"/>
+                <TextBox Height="40" FontSize="16" Text="{Binding Compound}" Background="#2C2C2C" Foreground="White"/>
+            </StackPanel>
+
+            <!-- Discount -->
+            <StackPanel>
+                <TextBlock FontSize="18" Text="Артикул" Foreground="White" Margin="0 0 0 5"/>
+                <TextBox FontSize="16" Height="40" Text="{Binding Article}" Background="#2C2C2C" Foreground="White"/>
+            </StackPanel>
+
+            <!-- CareAndWashing -->
+            <StackPanel>
+                <TextBlock FontSize="18" Text="Описание" Foreground="White" Margin="0 0 0 5"/>
+                <TextBox Text="{Binding Description}" 
+                         AcceptsReturn="True" 
+                         Height="80" 
+                         FontSize="16"
+                         Background="#2C2C2C" 
+                         Foreground="White"/>
+            </StackPanel>
+
+            <!-- Color ComboBox -->
+            <StackPanel>
+                <TextBlock FontSize="18" Text="Категория" Foreground="White" Margin="0 0 0 5"/>
+                <TextBox Text="{Binding CategoryName}" 
+                     AcceptsReturn="True" 
+                     Height="40" 
+                     FontSize="16"
+                     Background="#2C2C2C" 
+                     Foreground="White"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock FontSize="18" Text="Бренд" Foreground="White" Margin="0 0 0 5"/>
+                <TextBox Text="{Binding BrandName}" 
+                     AcceptsReturn="True" 
+                     Height="40" 
+                     FontSize="16"
+                     Background="#2C2C2C" 
+                     Foreground="White"/>
+            </StackPanel>
+            <StackPanel>
+                <TextBlock FontSize="18" Text="Пол" Foreground="White" Margin="0 0 0 5"/>
+                <ComboBox
+                 Height="40" 
+                 Name="GenderBox"
+                 FontSize="16"
+                 Background="#2C2C2C" 
+                 Foreground="Black">
+                    <TextBlock  Text="Мужской"></TextBlock>
+                    <TextBlock Text="Женский"></TextBlock>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+
+        <!-- Save Button -->
+        <Button Content="Добавить" 
+                Grid.Row="2" 
+                Name="AddButton"
+                Click="AddButton_Click"
+                Width="150"
+                Height="40"
+                Padding="10 5" 
+                Background="#E74C3C" 
+                Foreground="White" 
+                FontWeight="Bold" 
+                HorizontalAlignment="Center"/>
+    </Grid>
+</Page>

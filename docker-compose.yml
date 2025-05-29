@@ -1,0 +1,34 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:16
+    container_name: clothingstore-db
+    environment:
+      POSTGRES_DB: clothing_store
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 123321
+    volumes:
+      - ./dump.sql:/docker-entrypoint-initdb.d/dump.sql
+
+  backend:
+    build:
+      context: .
+      dockerfile: ./backend/Dockerfile
+    ports:
+      - "5095:80"
+    depends_on:
+      - db
+    environment:
+      - ConnectionStrings__DefaultConnection=Host=db;Port=5432;Database=clothing_store;Username=postgres;Password=123321
+
+  frontend:
+    build:
+      context: ./clothing-frontend/clothing-store
+      dockerfile: Dockerfile
+    ports:
+      - "3000:80"
+    depends_on:
+      - backend
+
+

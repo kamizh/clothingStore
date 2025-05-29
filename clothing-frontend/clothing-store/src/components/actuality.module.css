@@ -1,0 +1,64 @@
+.actuality {
+   
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.actuality_content {
+    align-items: stretch; /* Выровняет все по высоте */
+    display: flex;
+    height: auto;
+    padding-bottom: 5%;
+    gap: 1em;
+}
+.sub_title {
+    margin: 0;
+    font-size: 20px;
+    color: #1D1D1D;
+    font-weight: 600;
+}
+.text {
+    margin-top: 8px;
+    color: #565656;
+    font-size: 20px;
+}
+.title {
+    font-size: 30px
+}
+.card_left, .right_card {
+    flex: 1; /* Равномерное распределение высоты */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Распределяет элементы равномерно */
+}
+.left_section {
+
+    display: flex;
+    flex-direction: column;
+}
+.image_left {
+    height: 81.5%;
+    width: 100%;
+}
+.right_section {
+    min-width: 75%;
+    max-width: 75%;
+}
+.image_right {
+    width: 100%;
+}
+@media (max-width: 900px)
+{
+    .actuality_content {
+        flex-direction: column;
+    }
+    .right_section {
+        order: 0;
+    }
+    .left_section {
+        gap: 1em;
+        flex-direction: row;
+        order: 1;
+    }
+
+}

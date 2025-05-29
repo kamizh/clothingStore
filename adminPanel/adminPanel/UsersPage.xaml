@@ -1,0 +1,80 @@
+﻿<Page x:Class="adminPanel.UsersPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:adminPanel"
+      mc:Ignorable="d" 
+      d:DesignHeight="600" d:DesignWidth="1000"
+      Title="UsersPage">
+
+    <Grid Background="#F4F6F8" Margin="20">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Заголовок -->
+        <TextBlock Text="Пользователи" FontSize="32" FontWeight="Bold" Foreground="#2E3A59" Margin="0 0 0 20"/>
+        <Button BorderBrush="Snow" Background="Snow" HorizontalAlignment="Right" Width="50" Height="50" Name="UpdateButton" Click="UpdateButton_Click">
+            <Image Source="Resourses/update.png" Stretch="Uniform"/>
+        </Button>
+        <!-- Информация -->
+        <StackPanel Orientation="Horizontal" Grid.Row="1" Margin="0 0 0 20" Background="White"  >
+            <TextBlock Text="Всего:" FontSize="18" Foreground="#333" Margin="0 0 8 0"/>
+            <TextBlock Name="TotalUsers" FontSize="18" FontWeight="Bold" Foreground="#007ACC"/>
+            <TextBlock Text=" | Новых сегодня:" FontSize="18" Foreground="#333" Margin="15 0 5 0"/>
+            <TextBlock Name="NewUsersToday" FontSize="18" FontWeight="Bold" Foreground="#28A745"/>
+         
+        </StackPanel>
+        <StackPanel Margin="5" Orientation="Horizontal" Grid.Row="2">
+            <TextBlock Margin="5" Text="Поиск:" FontSize="18"></TextBlock>
+            <TextBox Margin="5" Height="25" Name="Search" SelectionChanged="Search_SelectionChanged" Width="300"></TextBox>
+            <ComboBox SelectionChanged="ComboType_SelectionChanged" Width="300" Height="25" Name="ComboType" >
+                <TextBlock Text="Все"></TextBlock>
+                <TextBlock Text="А - Я"></TextBlock>
+                <TextBlock Text="Я - А"></TextBlock>
+            </ComboBox>
+            <StackPanel Margin="5" Orientation="Vertical">
+                <RadioButton  Name="OnlyLocked" Content="Только заблокированные"></RadioButton>
+                <RadioButton Name="OnlyNotLocked" Content="Только активные"></RadioButton>
+            </StackPanel>
+        </StackPanel>
+        <!-- Таблица пользователей -->
+        <Border Grid.Row="3" Background="White" CornerRadius="8" Padding="10" BorderBrush="#DDD" BorderThickness="1">
+            <ListView Name="UsersListView" Background="White" BorderThickness="0">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Фамилия" Width="110" DisplayMemberBinding="{Binding SurName}" />
+                        <GridViewColumn Header="Имя" Width="110" DisplayMemberBinding="{Binding Name}" />
+                        <GridViewColumn Header="Email" Width="220" DisplayMemberBinding="{Binding Email}" />
+                        <GridViewColumn Header="Телефон" Width="150" DisplayMemberBinding="{Binding NumberPhone}" />
+                        <GridViewColumn Header="Дата регистрации" Width="170" DisplayMemberBinding="{Binding DataRegistration}" />
+                        <GridViewColumn Header="Статус" Width="120" DisplayMemberBinding="{Binding isLocked}" />
+                        <GridViewColumn Header="Действие" Width="130">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <Button Content="Подробнее"
+                                            Click="UserDetailButton_Click"
+                                            Tag="{Binding Id}"
+                                            Padding="6,2"
+                                            Background="#007ACC"
+                                            Foreground="White"
+                                            BorderBrush="Transparent"
+                                            FontWeight="SemiBold"
+                                            Cursor="Hand"
+                                            HorizontalAlignment="Center"
+                                            Width="100"
+                                            Height="30"
+                                            Style="{StaticResource {x:Static ToolBar.ButtonStyleKey}}" />
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Border>
+    </Grid>
+</Page>

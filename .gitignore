@@ -1,0 +1,21 @@
+# Visual Studio
+.vs/
+*.user
+*.suo
+
+# Build output
+bin/
+obj/
+
+# Node modules (React)
+clothing-frontend/clothing-store/node_modules/
+
+# Env files
+*.env
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db

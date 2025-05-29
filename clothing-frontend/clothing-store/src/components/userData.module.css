@@ -1,0 +1,55 @@
+
+.container {
+    display: flex;
+    justify-content: center;
+
+}
+
+.container_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.data_section {
+    display: flex;
+    flex-direction: row;
+    gap: 5em;
+}
+.line {
+    width: 1px;
+    height: 70%;
+    align-self: center;
+    background-color: #DEDEDB;
+}
+.header_text {
+    text-align: center;
+    font-size: 14px;
+    color: #565656;
+}
+.data_text {
+    text-transform: uppercase;
+    color: #1D1D1D;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+@media (max-width: 1040px)
+{
+    .data_section {
+        gap: 3em;
+    }
+}
+
+@media (max-width: 800px)
+{
+    .data_section {
+        gap: 1.5em;
+    }
+}
+
+@media (max-width : 650px)
+{
+    .data_section {
+        flex-direction: column;
+    }
+}

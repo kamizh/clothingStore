@@ -1,0 +1,135 @@
+.filter_container {
+    width: 100%;
+    opacity: 0.8;
+    padding: 2%;
+    z-index: 1000;
+    margin-bottom: 40px;
+}
+
+.filter_container_content {
+    display: flex;
+    justify-content: center;
+}
+
+.title_filter {
+    color: #565656;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.checkbox_list {
+  display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.checkbox_item {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #333;
+  cursor: pointer;
+}
+
+.checkbox_input {
+  margin-right: 10px;
+  width: 16px;
+  height: 16px;
+}
+
+.size_box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+.checkbox_label {
+    color: #565656;
+  user-select: none;
+}
+
+
+.price_box {
+    gap: 1em;
+    display: flex;
+}
+.text_price {
+    font-size: 15px;
+    color: #333;
+    font-weight: 500;
+
+}
+
+.price_input {
+    width: 120px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 500;
+    color: #333;
+}
+
+
+.gender_box {
+    display: flex;
+}
+
+.gender_text {
+    font-size: 15px;
+    font-weight: 400;
+    color: #333;
+}
+
+.genders_box {
+    display: flex;
+    gap: 1em;
+}
+
+.brands_container {
+    margin-left: 2%;
+}
+
+.buttons {
+    gap: 2em;
+    display: flex;
+    justify-content: end;
+}
+
+.cancel {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #565656;
+  border-radius: 4px;
+  background-color: transparent;
+  color: #565656;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.cancel:hover {
+  background-color: #f0f0f0;
+}
+
+.apply {
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 4px;
+  background-color: #565656;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.apply:hover {
+  background-color: #333;
+}
+
+@media (max-width: 850px)
+{
+    .filter_container_content {
+        flex-direction: column;
+    }
+}

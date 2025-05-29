@@ -1,0 +1,19 @@
+.card {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100px;
+}
+.image {
+    height: 100%;
+}
+.text {
+    color: #565656;
+    font-weight: 600;
+    text-transform: uppercase;
+}

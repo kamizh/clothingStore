@@ -1,0 +1,74 @@
+.detailsCatalog {
+    background-color: #F6F6F6;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта */
+    z-index: 5;
+    position: relative; /* Обязательно добавить! */
+
+}
+.details_catalog_content {
+    z-index: 5;
+
+    padding: 2%;
+    justify-content: space-around;
+    gap: 1em;
+    display: flex;
+}
+.catalog_column {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.title {
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1D1D1D;
+}
+.catalog_link {
+    font-size: 14px;
+    color: #414040;
+}
+.catalog_link:hover {
+    color: #1d1c1c;
+}
+.cards {
+    gap: 2rem;
+    max-width: 250px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    height: 108px;
+    text-align: center;
+}
+
+
+.card_img {
+    width: 80%;
+    height: 75%;
+}
+.circle_card {
+    background-color: #ede7e7;
+    width: 94px;
+    height: 94px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+}
+.card_text {
+    color: #414040;
+
+}
+
+.catalog_column_right {
+    padding-top: 3%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 25%;
+}
+.right {
+    width: 100px;
+}

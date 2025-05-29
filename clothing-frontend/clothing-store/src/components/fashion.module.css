@@ -1,0 +1,75 @@
+.fashion {
+    padding-top: 3%;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.title {
+    font-size: 30px;
+    font-weight: 600;
+    color: #1d1d1d;
+}
+.fashion_content {
+    gap: 1em;
+    display: flex;
+}
+
+.card {
+    height: 80%;
+    max-width: 33%;
+    min-width: 33%;
+}
+.image {
+    min-height: 100%;
+
+    width: 90%;
+}
+.text {
+    color: #1d1d1d;
+    font-size: 20px;
+    font-weight: 600;
+}
+.indicators {
+    display: flex;
+    justify-content: flex-start;
+    gap: 1em;
+}
+.line {
+    height: 2px;
+    width: 24px;
+    background-color: #bdbbbb;
+}
+.button {
+    all: unset; /* Убирает все стили по умолчанию */
+    display: inline-flex; /* Сохраняем flex-контейнер */
+    justify-content: center;
+    cursor: pointer; /* Курсор в виде руки */
+    background: transparent; /* Убираем фоновый цвет */
+    border: none; /* Убираем рамку */
+    padding: 0; /* Убираем отступы */
+    width: 100%;
+    height: 100%;
+}
+
+@media (max-width: 750px)
+{
+    .card {
+        width: 100%;
+        max-width: 500px; /* Можно задать больше, если нужно */
+
+    }
+    .text {
+        font-size: 14px;
+    }
+}
+.main {
+    padding: 5%;
+
+}
+.image {
+    width: 100%;
+}
+.low_elems {
+    display: flex;
+    justify-content: center;
+}

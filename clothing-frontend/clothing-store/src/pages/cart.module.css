@@ -1,0 +1,458 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1400px;
+  padding: 40px 40px 20px 40px;
+  gap: 5%;
+}
+.cart_empty {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+}
+/* Левая часть: форма */
+.client_information_container {
+  flex: 1;
+  min-width: 340px;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #C5C5C5;
+  font-size: 14px;
+  color: #565656;
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  color: #1D1D1D;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+.text_sub {
+  margin: 0;
+  color: #565656;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.items_container {
+  flex: 1.3;
+  width: 100%;
+}
+
+.cart_table {
+  width: 100%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 1fr 1.5fr 1fr 1.2fr;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #555;
+  border-bottom: 2px solid #ccc;
+}
+
+.photo img {
+  width: 70px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button {
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.delete {
+  background: none;
+  border: none;
+  color: #999;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Вторая половина: доставка + итог */
+.container_content_two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px 40px 60px 40px;
+  gap: 5%;
+}
+
+.dilivery_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info_section {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+}
+.info_text {
+  color: #565656;
+  font-weight: 450;
+  font-size: 14px;
+}
+
+.itog_section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.itog_div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.dots {
+  flex: 1;
+  height: 1px;
+  background-color: #1D1D1D;
+  margin-top: 10px;
+}
+
+.info_text_sale {
+  color: red;
+  font-size: 15px;
+}
+
+
+.text_itog {
+    font-weight: 600;
+}
+.info_text_sum {
+    font-size: 25px;
+
+}
+.itog_button {
+    height: 50px;
+    background-color: #565656;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 600;
+    color: #ffffff;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.itog_button:hover {
+     background-color: #383737;
+
+}
+
+
+/* Адаптив */
+@media (max-width: 960px) {
+ .cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 1400px;
+  padding: 40px 40px 20px 40px;
+  gap: 5%;
+}
+
+/* Левая часть: форма */
+.client_information_container {
+  flex: 1;
+  min-width: 340px;
+}
+
+.input_section {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.input {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  height: 50px;
+  border-radius: 50px;
+  border: 1px solid #C5C5C5;
+  font-size: 14px;
+  color: #565656;
+  font-weight: 400;
+  padding: 0 20px;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 28px;
+  color: #1D1D1D;
+  margin-bottom: 20px;
+}
+
+.text {
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+}
+.text_sub {
+  margin: 0;
+  color: #565656;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+.items_container {
+  flex: 1.3;
+  width: 100%;
+}
+
+.cart_table {
+  width: 100%;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr 1fr 1.5fr 1fr 1.2fr;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #555;
+  border-bottom: 2px solid #ccc;
+}
+
+.photo img {
+  width: 70px;
+  height: auto;
+  border-radius: 6px;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.quantity {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quantity button {
+  border: none;
+  background: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.delete {
+  background: none;
+  border: none;
+  color: #999;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Вторая половина: доставка + итог */
+.container_content_two {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1400px;
+  padding: 20px 40px 60px 40px;
+  gap: 5%;
+}
+
+.dilivery_info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.info_section {
+  display: flex;
+  align-items: flex-start;
+  gap: 1em;
+}
+.info_text {
+  color: #565656;
+  font-weight: 450;
+  font-size: 14px;
+}
+
+.itog_section {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.itog_div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 15px;
+}
+
+.dots {
+  flex: 1;
+  height: 1px;
+  background-color: #1D1D1D;
+  margin-top: 10px;
+}
+
+.info_text_sale {
+  color: red;
+  font-size: 15px;
+}
+
+/* Адаптив */
+@media (max-width: 960px) {
+  .container_content {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .container_content_two {
+    flex-direction: column;
+    padding: 20px;
+  }
+  .dilivery_info {
+    order: 1;
+  }
+  .itog_section {
+    order: 0;
+  }
+
+  
+}
+
+}
+@media (max-width: 458px) {
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 16px 0;
+    gap: 10px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .header {
+    display: none;
+  }
+
+  .photo img {
+    width: 150px;
+  }
+  
+
+  .quantity {
+    gap: 8px;
+  }
+
+  .quantity button {
+    font-size: 18px;
+  }
+
+  .delete {
+    font-size: 13px;
+  }
+
+  .bold {
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  .row > div {
+    font-size: 14px;
+  }
+
+  .actions {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+
