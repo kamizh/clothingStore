@@ -73,7 +73,7 @@
 
 1. **Клонировать репозиторий**:
    ```bash
-   git clone https://github.com/your-username/clothing-store.git
+   git clone https://github.com/kamizh/clothing-store.git
    cd clothing-store
 
 2. **Запустить docker-сборку**:
