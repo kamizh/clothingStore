@@ -3,38 +3,41 @@ import axios from "axios";
 
 export const AuthContext = createContext({
   token: null,
-  login: (token) => {},
+  login: () => {},
   logout: () => {},
+  isAuthenticated: false,
 });
 
 export function AuthProvider({ children }) {
-  const [token, setToken] = useState(null);
+  const [token, setToken] = useState(() => localStorage.getItem("token"));
 
-
-  // внутри AuthProvider
-    useEffect(() => {
-    const t = localStorage.getItem("token");
-    if (t) {
-        setToken(t);
-        axios.defaults.headers.common.Authorization = `Bearer ${t}`;
+  useEffect(() => {
+    if (token) {
+      localStorage.setItem("token", token);
+      axios.defaults.headers.common.Authorization = `Bearer ${token}`;
+    } else {
+      localStorage.removeItem("token");
+      delete axios.defaults.headers.common.Authorization;
     }
-    }, []);
+  }, [token]);
 
-    const login = (t) => {
-        localStorage.setItem("token", t);
-        axios.defaults.headers.common.Authorization = `Bearer ${t}`;
-        setToken(t);
-    };
-
+  const login = (newToken) => {
+    setToken(newToken);
+  };
 
   const logout = () => {
-    localStorage.removeItem("token");
-    delete axios.defaults.headers.common.Authorization;
     setToken(null);
   };
 
   return (
-    <AuthContext.Provider value={{ token, login, logout }}>
+    <AuthContext.Provider
+      value={{
+        token,
+        login,
+        logout,
+        isAuthenticated: !!token,
+      }}
+    >
       {children}
     </AuthContext.Provider>
   );

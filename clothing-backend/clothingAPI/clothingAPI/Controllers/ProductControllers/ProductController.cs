@@ -253,6 +253,17 @@ namespace clothingAPI.Controllers.ProductControllers
 
         }
 
+        [HttpGet("brand/favoritebrands!")]
+        public async Task<IActionResult> GetFavoriteBrands()
+        {
+
+
+            var products = await _context.Brands.Where(p => p.Name == "Nike" || p.Name == "Carhartt" || p.Name == "Adidas").ToListAsync();
+
+            return Ok(products);
+
+        }
+
         [HttpGet("detail/{id}")]
         public async Task<IActionResult> GetProductDetail(int id)
         {

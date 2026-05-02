@@ -144,10 +144,14 @@ function Filter({ onApplyFilters }) {
                 </div>
             </div>
 
-            <div className={styles.buttons}>
-                <button className={styles.cancel} onClick={() => window.location.reload()}>Сбросить фильтры</button>
-                <button className={styles.apply} onClick={handleApply}>Применить фильтры</button>
-            </div>
+           <div className={styles.buttons}>
+    <button className={styles.cancel} type="button" onClick={() => window.location.reload()}>
+        Сбросить
+    </button>
+    <button className={styles.apply} type="button" onClick={handleApply}>
+        Применить фильтры
+    </button>
+</div>
         </div>
     );
 }

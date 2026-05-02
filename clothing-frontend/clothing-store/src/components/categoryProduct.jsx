@@ -1,75 +1,73 @@
-import { use, useState } from "react"
-import styles from "./categoryProduct.module.css"
-import twoImage from "../assets/mainPhoto/kid.png"
-import threeImage from "../assets/mainPhoto/woman.png"
-import oneImage from "../assets/categoryProductImages/leftMain.png"
-import { color } from "@cloudinary/url-gen/qualifiers/background"
+import styles from "./categoryProduct.module.css";
 
+function CategoryProduct() {
+    const features = [
+        {
+            title: "Современный каталог",
+            text: "Структурированная система категорий, брендов и фильтров для быстрого поиска нужных товаров."
+        },
+        {
+            title: "Premium UX",
+            text: "Минималистичный интерфейс, единая визуальная система и аккуратная подача ключевых разделов."
+        },
+        {
+            title: "Актуальные коллекции",
+            text: "Подборки новинок, базовых вещей и сезонных предложений в одном пространстве."
+        }
+    ];
 
-import shoesImg from '../assets/categoryProductImages/Shoes.png';
-import manImg from '../assets/categoryProductImages/manClothes.png'
-import womanImg from '../assets/categoryProductImages/womanClothes.png'
-import kidimg from '../assets/categoryProductImages/kidClothes.png'
-
-function CategoryProduct()
-{
-    const Images = [oneImage,twoImage,threeImage]
-
-    const [currentImage,setCurrentImage] = useState(0);
-
-
+    const quickLinks = [
+        { title: "Мужская одежда", subtitle: "Основные категории", href: "/catalog/men" },
+        { title: "Женская одежда", subtitle: "Новые поступления", href: "/catalog/women" },
+        { title: "Sale & Trends", subtitle: "Лучшие предложения", href: "/catalog" }
+    ];
 
     return (
-        <div className={styles.category}>
+        <section className={styles.category}>
             <div className={styles.category_content}>
-                <button onClick={ () => {
-                    if(currentImage == 2)
-                        setCurrentImage(0)
-                    else
-                        setCurrentImage(currentImage + 1)
-                }} className={styles.button}>
-                <div className={styles.left_section}>
-                    <img className={styles.main_image} src={Images[currentImage]} alt="" />
-                </div>
-                </button>
-                <div className={styles.right_section}>
-                    <h2 className={styles.title}>Категории товаров</h2>
-                    <p className={styles.description}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Non blandit massa enim nec dui nunc mattis. Enim blandit volutpat maecenas volutpat blandit aliquam etiam.</p>
-                    <div className={styles.categories}>
-                    <a href="/catalog/men">
-                            <div className={styles.card}>
-                                <img src={manImg} alt="" className={styles.image} />
-                                <p className={styles.text}>Мужская одежда</p>
-                            </div>
-                        </a>
-                        <a href="/catalog/women">
-                            <div className={styles.card}>
-                                <img src={womanImg} alt="" className={styles.image} />
-                                <p className={styles.text}>Женская одежда</p>
-                            </div>
-                        </a>
-                        <a href="/catalog/kids">
-                            <div className={styles.card}>
-                                <img src={kidimg} alt="" className={styles.image} />
-                                <p className={styles.text}>Детям</p>
-                            </div>
-                        </a>
-                        <a href="/catalog/shoes">
-                            <div className={styles.card}>
-                                <img src={shoesImg} alt="" className={styles.image} />
-                                <p className={styles.text}>Обувь</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div className={styles.indicators}>
-                        <div  style={{ backgroundColor: currentImage === 0 ? "#565656" : "#bdbbbb" }} className={styles.line}></div>
-                        <div style={{ backgroundColor: currentImage === 1 ? "#565656" : "#bdbbbb" }} className={styles.line}></div>
-                        <div style={{ backgroundColor: currentImage === 2 ? "#565656" : "#bdbbbb" }} className={styles.line}></div>
+                <div className={styles.hero_block}>
+                    <p className={styles.eyebrow}>Store presentation</p>
+                    <h2 className={styles.title}>Простая навигация и сильная подача каталога</h2>
+                    <p className={styles.description}>
+                        Эта секция помогает быстро сориентироваться в магазине:
+                        перейти к ключевым разделам, увидеть преимущества интерфейса
+                        и почувствовать цельный premium dark стиль проекта.
+                    </p>
 
+                    <div className={styles.actions}>
+                        <a href="/catalog" className={styles.primary_button}>
+                            Перейти в каталог
+                        </a>
+                        <a href="/catalog/news" className={styles.secondary_button}>
+                            Смотреть новинки
+                        </a>
                     </div>
+                </div>
+
+                <div className={styles.features_grid}>
+                    {features.map((item) => (
+                        <div key={item.title} className={styles.feature_card}>
+                            <div className={styles.feature_glow}></div>
+                            <h3 className={styles.feature_title}>{item.title}</h3>
+                            <p className={styles.feature_text}>{item.text}</p>
+                        </div>
+                    ))}
+                </div>
+
+                <div className={styles.quick_links}>
+                    {quickLinks.map((item) => (
+                        <a key={item.title} href={item.href} className={styles.quick_card}>
+                            <div className={styles.quick_card_top}>
+                                <span className={styles.quick_label}>{item.subtitle}</span>
+                                <span className={styles.quick_arrow}>→</span>
+                            </div>
+                            <p className={styles.quick_title}>{item.title}</p>
+                        </a>
+                    ))}
                 </div>
             </div>
-        </div>
-    )
+        </section>
+    );
 }
+
 export default CategoryProduct;

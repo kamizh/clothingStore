@@ -1,96 +1,193 @@
 .entrance {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 999;
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(5, 5, 8, 0.72);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  padding: 20px;
+  box-sizing: border-box;
 }
 
 .entrance_content {
-    background-color: white;
-    border-radius: 4px;
-    padding: 40px 30px;
-    max-width: 420px;
-    width: 100%;
-    position: relative;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 520px;
+  position: relative;
+  padding: 32px;
+  border-radius: 30px;
+  background:
+    radial-gradient(circle at top left, rgba(201, 169, 110, 0.12), transparent 26%),
+    linear-gradient(180deg, #17171b 0%, #121216 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.35);
+  color: var(--text);
 }
 
 .exitButton {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 5px;
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: var(--text-soft);
+  cursor: pointer;
+  font-size: 22px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.exitButton:hover {
+  transform: translateY(-1px);
+  border-color: rgba(201, 169, 110, 0.3);
+  color: var(--accent);
+}
+
+.badge {
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(201, 169, 110, 0.14);
+  border: 1px solid rgba(201, 169, 110, 0.22);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
 }
 
 .title {
-    text-align: center;
-    font-size: 28px;
-    font-weight: 700;
-    margin-bottom: 32px;
-    color: #000;
+  margin: 0;
+  color: var(--text);
+  font-size: 42px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin: 14px 0 0;
+  color: var(--text-soft);
+  font-size: 15px;
+  line-height: 1.7;
+  max-width: 390px;
+}
+
+.form {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .section_input {
-    margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .text {
-    font-size: 14px;
-    font-weight: 400;
-    margin-bottom: 8px;
-    color: #000;
+  margin: 0;
+  color: var(--text);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.04em;
 }
 
 .input_pole {
-    width: 100%;
-    padding: 12px 20px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 999px;
-    outline: none;
-    box-sizing: border-box;
-    transition: border 0.2s;
+  width: 100%;
+  min-height: 54px;
+  padding: 0 18px;
+  font-size: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  outline: none;
+  box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.input_pole::placeholder {
+  color: var(--text-muted);
 }
 
 .input_pole:focus {
-    border-color: #888;
+  border-color: rgba(201, 169, 110, 0.4);
+  box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.12);
+  background: rgba(255, 255, 255, 0.045);
 }
 
 .button_submit {
-    width: 100%;
-    padding: 14px 0;
-    background-color: #3e3e3e;
-    color: white;
-    font-size: 16px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    border: none;
-    border-radius: 999px;
-    cursor: pointer;
-    transition: background-color 0.3s;
+  width: 100%;
+  min-height: 56px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--accent), #b89153);
+  color: #111;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: 0 14px 28px rgba(201, 169, 110, 0.2);
+  transition: transform 0.2s ease, filter 0.2s ease;
 }
 
 .button_submit:hover {
-    background-color: #2e2e2e;
+  transform: translateY(-2px);
+  filter: brightness(1.03);
 }
 
 .error {
-    color: red;
-    font-size: 0.85rem;
-    margin-top: 4px;
+  margin: 0;
+  color: #ff7b7b;
+  font-size: 13px;
+  line-height: 1.5;
 }
 
-.or {
-    text-align: center;
+@media (max-width: 640px) {
+  .entrance {
+    padding: 14px;
+    align-items: flex-end;
+  }
+
+  .entrance_content {
+    max-width: none;
+    padding: 24px 18px 18px;
+    border-radius: 24px 24px 0 0;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .subtitle {
     font-size: 14px;
-    margin: 10px 0;
+    line-height: 1.65;
+  }
+
+  .input_pole {
+    min-height: 50px;
+    border-radius: 14px;
+  }
+
+  .button_submit {
+    min-height: 52px;
+    border-radius: 14px;
+  }
 }

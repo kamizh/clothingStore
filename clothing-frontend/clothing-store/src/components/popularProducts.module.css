@@ -1,101 +1,203 @@
 .container {
   overflow: hidden;
   width: 100%;
-  padding: 5%;
-      position: relative;
-
-
+  padding: 56px 32px 32px;
+  position: relative;
+  background: var(--bg);
 }
 
+.section_header {
+  max-width: 1440px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.section_title_box {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.section_eyebrow {
+  margin: 0;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.section_title {
+  margin: 0;
+  color: var(--text);
+  font-size: 48px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.section_link {
+  min-height: 48px;
+  padding: 0 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, #1b1b20 0%, #151519 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.section_link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(201, 169, 110, 0.35);
+  color: var(--accent);
+}
 
 .scroll_wrapper {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.products {
-
+  max-width: 1440px;
+  margin: 0 auto;
+  position: relative;
   display: flex;
-  gap: 40px;
-  padding-top: 10px;
+  align-items: center;
+}
+
+.products {
+  display: flex;
+  gap: 24px;
+  padding: 6px 0 10px;
   overflow-x: auto;
   scroll-behavior: smooth;
-  padding-bottom: 10px;
-  
+  width: 100%;
+  scrollbar-width: none;
 }
 
 .products::-webkit-scrollbar {
   display: none;
 }
 
-.arrow_button {
-
-position: absolute;
-  transform: translateY(-50%);
-
-  width: 35px;
-  height: 35px;
-  border-radius: 50%;
-  border: none;
-  background-color: #00000080;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
- 
+.card_wrapper {
+  flex: 0 0 auto;
 }
 
+.arrow_button {
+  position: absolute;
+  top: 42%;
+  transform: translateY(-50%);
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(18, 18, 22, 0.78);
+  backdrop-filter: blur(10px);
+  color: var(--text);
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 5;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.arrow_button:hover {
+  border-color: rgba(201, 169, 110, 0.35);
+  color: var(--accent);
+  background: rgba(25, 25, 30, 0.9);
+}
 
 .arrow_left {
-    top: 50%;
-    right: 100%;
+  left: -20px;
 }
+
 .arrow_right {
-    top: 50%;
-    left: 100%;
+  right: -20px;
 }
-
-
-
 
 .dots {
   display: flex;
   justify-content: center;
-  gap: 6px;
-  margin-top: 15px;
+  gap: 8px;
+  margin-top: 22px;
 }
 
 .dot,
 .dotActive {
-  width: 20px;
-  height: 2px;
-  background-color: #c4c4c4;
-  transition: background-color 0.3s ease;
+  width: 28px;
+  height: 3px;
+  border-radius: 999px;
+  background-color: rgba(255, 255, 255, 0.18);
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .dotActive {
-  background-color: #1d1d1d;
+  background-color: var(--accent);
+  transform: scaleX(1.08);
 }
 
-.hight_elems {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+@media (max-width: 900px) {
+  .container {
+    padding: 40px 16px 24px;
+  }
+
+  .section_header {
+    margin-bottom: 20px;
+  }
+
+  .section_title {
+    font-size: 34px;
+  }
+
+  .section_link {
+    min-height: 42px;
+    padding: 0 16px;
+    font-size: 11px;
+  }
+
+  .products {
+    gap: 16px;
+  }
+
+  .arrow_left {
+    left: -8px;
+  }
+
+  .arrow_right {
+    right: -8px;
+  }
 }
 
-.in_catalog {
-    color: #565656;
-    font-size: 14px;
-    font-weight: 600;
-}
+@media (max-width: 640px) {
+  .section_header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 14px;
+  }
 
-@media (max-width: 450px)
-{
-    .hight_elems {
-        flex-direction: column;
-    }
-    .hight_elems {
-        justify-content: start;
-    }
+  .section_title {
+    font-size: 28px;
+  }
+
+  .section_link {
+    width: 100%;
+  }
+
+  .arrow_button {
+    display: none;
+  }
+
+  .dots {
+    margin-top: 18px;
+  }
+
+  .dot,
+  .dotActive {
+    width: 20px;
+  }
 }

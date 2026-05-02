@@ -144,3 +144,4 @@ C:\Users\kamizh\OneDrive\Рабочий стол\clothingStore\clothing-backend\
 C:\Users\kamizh\OneDrive\Рабочий стол\clothingStore\clothing-backend\clothingAPI\clothingAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 C:\Users\kamizh\OneDrive\Рабочий стол\clothingStore\clothing-backend\clothingAPI\clothingAPI\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
 C:\Users\kamizh\OneDrive\Рабочий стол\clothingStore\clothing-backend\clothingAPI\clothingAPI\obj\Debug\net8.0\clothingAPI.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\kamizh\OneDrive\Рабочий стол\clothingStore\clothing-backend\clothingAPI\clothingAPI\obj\Debug\net8.0\clothingAPI.sourcelink.json

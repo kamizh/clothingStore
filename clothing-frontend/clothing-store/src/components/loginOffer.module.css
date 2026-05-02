@@ -1,48 +1,205 @@
 .wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 60px;
+  width: 100%;
+  padding: 56px 32px 40px;
+  background: var(--bg);
 }
 
-.card {
+.hero {
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 42px 40px;
+  border-radius: 34px;
+  background:
+    radial-gradient(circle at top left, rgba(201, 169, 110, 0.12), transparent 26%),
+    radial-gradient(circle at bottom right, rgba(201, 169, 110, 0.08), transparent 22%),
+    linear-gradient(180deg, #17171b 0%, #121216 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 26px 48px rgba(0, 0, 0, 0.28);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background: #fff;
-  border: 1px solid #eee;
-  padding: 40px 50px;
-  border-radius: 12px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.08);
-  margin-bottom: 60px;
+  gap: 22px;
+  overflow: hidden;
+  position: relative;
 }
 
-.icon {
-  font-size: 48px;
-  color: #555;
-  margin-bottom: 20px;
+.badge {
+  min-height: 34px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(201, 169, 110, 0.14);
+  border: 1px solid rgba(201, 169, 110, 0.22);
+  color: var(--accent);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: flex-start;
+}
+
+.title {
+  margin: 0;
+  max-width: 760px;
+  color: var(--text);
+  font-size: 54px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 700;
 }
 
 .text {
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #222;
+  margin: 0;
+  max-width: 700px;
+  color: var(--text-soft);
+  font-size: 17px;
+  line-height: 1.8;
 }
 
-.button {
-  background-color: #111;
-  color: white;
-  font-size: 16px;
-  padding: 12px 28px;
-  border-radius: 6px;
+.actions {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-top: 4px;
+}
+
+.primaryButton,
+.secondaryButton {
+  min-height: 54px;
+  padding: 0 22px;
+  border-radius: 16px;
   border: none;
-  margin-bottom: 10px;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease, filter 0.2s ease, background 0.2s ease;
 }
 
-.button:hover {
-  background-color: #333;
+.primaryButton {
+  background: linear-gradient(135deg, var(--accent), #b89153);
+  color: #111;
+  box-shadow: 0 14px 28px rgba(201, 169, 110, 0.2);
+}
+
+.primaryButton:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.03);
+}
+
+.secondaryButton {
+  background: rgba(255, 255, 255, 0.03);
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.secondaryButton:hover {
+  transform: translateY(-2px);
+  border-color: rgba(201, 169, 110, 0.3);
+  color: var(--accent);
+}
+
+.features {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.featureCard {
+  min-height: 190px;
+  padding: 22px;
+  border-radius: 24px;
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.035) 0%, rgba(255, 255, 255, 0.02) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  transition: transform 0.22s ease, border-color 0.22s ease, box-shadow 0.22s ease;
+}
+
+.featureCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(201, 169, 110, 0.24);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.22);
+}
+
+.featureNumber {
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+}
+
+.featureTitle {
+  margin: 0;
+  color: var(--text);
+  font-size: 26px;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+  font-weight: 700;
+}
+
+.featureText {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+@media (max-width: 1000px) {
+  .features {
+    grid-template-columns: 1fr;
+  }
+
+  .title {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 760px) {
+  .wrapper {
+    padding: 28px 16px 20px;
+  }
+
+  .hero {
+    padding: 24px 18px;
+    border-radius: 24px;
+    gap: 18px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .text,
+  .featureText {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .primaryButton,
+  .secondaryButton {
+    width: 100%;
+    min-height: 50px;
+    border-radius: 14px;
+  }
+
+  .featureCard {
+    min-height: 160px;
+    padding: 18px;
+    border-radius: 20px;
+  }
+
+  .featureTitle {
+    font-size: 22px;
+  }
 }

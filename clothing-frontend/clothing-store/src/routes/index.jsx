@@ -9,6 +9,7 @@ import Search from "../pages//search.jsx"
 import Profile from "../pages/profile.jsx"
 import NotFound from "../pages/NotFound.jsx"
 import About from "../pages/about.jsx"
+import Contacts from "../pages/contacts.jsx";
 
 
 
@@ -30,6 +31,7 @@ function Index()
             <Route path="/profile" element={<Profile/>} />
             <Route path="*" element={<NotFound/>} />
             <Route path="/about" element={<About/>} />
+            <Route path="/contact" element={<Contacts/>} />
 
 
         </Routes>

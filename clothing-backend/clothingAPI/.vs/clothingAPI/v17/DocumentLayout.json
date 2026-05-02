@@ -3,8 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\controllers\\productcontrollers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\controllers\\productcontrollers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\services\\typecategporyformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\services\\typecategporyformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\services\\typebrandformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\services\\typebrandformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\services\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\services\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\services\\generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\services\\generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -47,10 +71,6 @@
       "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\dto\\cartoforderdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\controllers\\productcontrollers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\controllers\\productcontrollers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -71,10 +91,6 @@
       "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\dto\\productcard.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\services\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\services\\productmapper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\repository\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -85,10 +101,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\controllers\\entrancecontrollers\\entrancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\controllers\\entrancecontrollers\\entrancecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\services\\passwordservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\dto\\passworddto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -107,20 +119,8 @@
       "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\models\\adress.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\services\\generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\services\\generatejwttoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\services\\typebrandformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\services\\typebrandformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\services\\typecategporyformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|solutionrelative:clothingapi\\services\\typecategporyformat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3D06BE86-4C91-4E86-9343-4205614C51B3}|clothingAPI\\clothingAPI.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\clothing-backend\\clothingapi\\clothingapi\\models\\productview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -146,24 +146,25 @@
       "DocumentGroups": [
         {
           "DockedWidth": 460,
-          "SelectedChildIndex": 29,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 0,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Controllers\\ProductControllers\\ProductController.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Controllers\\ProductControllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Controllers\\ProductControllers\\ProductController.cs",
               "RelativeToolTip": "clothingAPI\\Controllers\\ProductControllers\\ProductController.cs",
-              "ViewState": "AQIAAH8BAAAAAAAAAAAAwJoBAAAFAAAA",
+              "ViewState": "AQIAAOsAAAAAAAAAAAAiwA4BAAA4AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-04-11T12:29:59.69Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 14,
               "Title": "ProfileController.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Controllers\\ProfileControllers\\ProfileController.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Controllers\\ProfileControllers\\ProfileController.cs",
@@ -176,7 +177,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "CartController.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Controllers\\CartControllers\\CartController.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Controllers\\CartControllers\\CartController.cs",
@@ -189,7 +190,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Controllers\\AdminControllers\\AdminController.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Controllers\\AdminControllers\\AdminController.cs",
@@ -201,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 13,
               "Title": "OrderitemDto.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Dto\\OrderitemDto.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Dto\\OrderitemDto.cs",
@@ -213,7 +214,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 16,
               "Title": "CartOfOrderDto.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Dto\\CartOfOrderDto.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Dto\\CartOfOrderDto.cs",
@@ -225,7 +226,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
               "Title": "CartItemDto.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Dto\\CartItemDto.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Dto\\CartItemDto.cs",
@@ -237,7 +238,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 18,
               "Title": "SmallCartDto.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Dto\\SmallCartDto.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Dto\\SmallCartDto.cs",
@@ -249,7 +250,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 20,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Data\\ApplicationDbContext.cs",
@@ -261,7 +262,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 12,
               "Title": "OrderItem.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Models\\OrderItem.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Models\\OrderItem.cs",
@@ -273,7 +274,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 11,
               "Title": "Order.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Models\\Order.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Models\\Order.cs",
@@ -285,7 +286,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 17,
               "Title": "CartItem.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Models\\CartItem.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Models\\CartItem.cs",
@@ -297,7 +298,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 19,
               "Title": "FavoriteDto.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Dto\\FavoriteDto.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Dto\\FavoriteDto.cs",
@@ -309,7 +310,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "FavoriteProduct.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Models\\FavoriteProduct.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Models\\FavoriteProduct.cs",
@@ -321,7 +322,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 5,
               "Title": "PasswordService.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Services\\PasswordService.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Services\\PasswordService.cs",
@@ -333,7 +334,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "PasswordDto.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Dto\\PasswordDto.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Dto\\PasswordDto.cs",
@@ -345,7 +346,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "AdressDto.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Dto\\AdressDto.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Dto\\AdressDto.cs",
@@ -357,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\appsettings.json",
               "RelativeDocumentMoniker": "clothingAPI\\appsettings.json",
@@ -369,7 +370,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Dto\\UserDto.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Dto\\UserDto.cs",
@@ -381,7 +382,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "EntranceController.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Controllers\\EntranceControllers\\EntranceController.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Controllers\\EntranceControllers\\EntranceController.cs",
@@ -393,19 +394,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 6,
               "Title": "GenerateJWTToken.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Services\\GenerateJWTToken.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Services\\GenerateJWTToken.cs",
               "ToolTip": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Services\\GenerateJWTToken.cs",
               "RelativeToolTip": "clothingAPI\\Services\\GenerateJWTToken.cs",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAkwCwAAAAAAAAA",
+              "ViewState": "AQIAAAkAAAAAAAAAAAA5wCwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T08:33:11.542Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "User.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Models\\User.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Models\\User.cs",
@@ -417,7 +418,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 3,
               "Title": "TypeBrandFormat.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Services\\TypeBrandFormat.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Services\\TypeBrandFormat.cs",
@@ -429,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 2,
               "Title": "TypeCategporyFormat.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Services\\TypeCategporyFormat.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Services\\TypeCategporyFormat.cs",
@@ -441,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "ProductRepository.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Repository\\ProductRepository.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Repository\\ProductRepository.cs",
@@ -453,19 +454,19 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 4,
               "Title": "ProductMapper.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Services\\ProductMapper.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Services\\ProductMapper.cs",
               "ToolTip": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Services\\ProductMapper.cs",
               "RelativeToolTip": "clothingAPI\\Services\\ProductMapper.cs",
-              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T10:19:08.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 21,
               "Title": "ProductCard.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Dto\\ProductCard.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Dto\\ProductCard.cs",
@@ -477,7 +478,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Models\\Product.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Models\\Product.cs",
@@ -501,16 +502,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Program.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Program.cs",
               "ToolTip": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Program.cs",
               "RelativeToolTip": "clothingAPI\\Program.cs",
-              "ViewState": "AQIAAEsAAAAAAAAAAAAiwGUAAAAAAAAA",
+              "ViewState": "AQIAACMAAAAAAAAAAAAmwCwAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T08:45:41.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T08:45:41.69Z"
             },
             {
               "$type": "Document",
@@ -550,7 +550,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Adress.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\clothing-backend\\clothingAPI\\clothingAPI\\Models\\Adress.cs",
               "RelativeDocumentMoniker": "clothingAPI\\Models\\Adress.cs",

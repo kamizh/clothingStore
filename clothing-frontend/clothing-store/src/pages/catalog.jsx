@@ -3,7 +3,6 @@ import Subscrabe from "../components/subscribe.jsx"
 import axios from 'axios'
 import { useState,useEffect } from 'react'
 import React from 'react'
-import OurLinks from '../components/UI/ourLinks.jsx'
 import Cardproduct from '../components/cardproduct.jsx'
 import Actuality from '../components/actuality.jsx'
 import SizeFilter from '../components/sizeFilter.jsx'
@@ -34,7 +33,6 @@ function Catalog(props)
     const isGender = (val) => ["men", "women", "kids"].includes(val.toLowerCase());
     const isCategory = (val) => ["tshirts", "jackets", "jeans", "hoodies"].includes(val.toLowerCase());
 
-    // 🔍 интерпретируем параметры
     if (param1 && param2) {
         if (isGender(param1)) {
             gender = param1;
@@ -66,14 +64,13 @@ function Catalog(props)
         url = `http://localhost:5095/api/product/brand/${brand}`;
     }
 
-    console.log("📦 URL для загрузки:", url);
 
     axios.get(url)
         .then(res => {
             setProducts(res.data);
             setProductFilterArr(res.data);
         })
-        .catch(() => console.log("Ошибка загрузки продуктов по URL: " + url));
+        .catch(() => console.log());
     }, [gender, category, brand]);
 
 
@@ -180,7 +177,6 @@ function Catalog(props)
     
 
     const handleSortChange = (value) => {
-        console.log("Выбрана сортировка:", value);
 
 
         if (value === "popular") {
@@ -204,35 +200,51 @@ function Catalog(props)
 
     return (
         <div className={styles.Catalog}>
-            <Actuality/>
             <div className={styles.catalog_content}>
-                <div className={styles.hight_elems}>
-                    <div className={styles.title_and_count}>
-                        <h1 className={styles.title}>Каталог товаров</h1>
-                        <p className={styles.countProduct}>{productFilterArr.length} товара</p>
-                    </div>
-                    <div className={styles.activeButton}>
-                        <button onClick={() => {
-                            if(isOpenFilter)
-                                setIsOpenFilter(false)
-                            else
-                                setIsOpenFilter(true);
+                <div className={styles.catalog_hero}>
+  <div className={styles.catalog_hero_text}>
+    <p className={styles.eyebrow}>Premium catalog</p>
+    <h1 className={styles.title}>Каталог товаров</h1>
+    <p className={styles.catalog_description}>
+      Подборка актуальных моделей в премиальной dark-стилистике.
+      Выбирай по бренду, категории, цвету и цене.
+    </p>
+  </div>
 
-                        }} className={`${styles.buttonAll} ${styles.button_filter}`}>Фильтры
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M10.6248 13.4369L3.12485 13.4369" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M16.875 13.4369L13.125 13.4369" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M5.62485 6.56196L3.12485 6.56189" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M16.875 6.56189L8.125 6.56196" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M8.125 4.68689V8.43689" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                            <path d="M13.125 15.3119V11.5619" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
-                            </svg>
-                        </button>
+  <div className={styles.catalog_meta}>
+    <div className={styles.meta_card}>
+      <span className={styles.meta_label}>Найдено</span>
+      <span className={styles.meta_value}>{productFilterArr.length}</span>
+    </div>
+    <div className={styles.meta_card}>
+      <span className={styles.meta_label}>На странице</span>
+      <span className={styles.meta_value}>{currentProducts.length}</span>
+    </div>
+  </div>
+</div>
 
-                        <SortDropdown onChange={handleSortChange} />
+<div className={styles.toolbar}>
+  <div className={styles.toolbar_left}>
+    <button
+      onClick={() => setIsOpenFilter(!isOpenFilter)}
+      className={`${styles.buttonAll} ${styles.button_filter}`}
+    >
+      <span>Фильтры</span>
+      <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M10.6248 13.4369L3.12485 13.4369" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M16.875 13.4369L13.125 13.4369" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M5.62485 6.56196L3.12485 6.56189" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M16.875 6.56189L8.125 6.56196" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M8.125 4.68689V8.43689" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M13.125 15.3119V11.5619" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/>
+      </svg>
+    </button>
+  </div>
 
-                    </div>
-                </div>
+  <div className={styles.toolbar_right}>
+    <SortDropdown onChange={handleSortChange} />
+  </div>
+</div>
 
 
                 { isOpenFilter && <Filter className={styles.filter} onApplyFilters={setFilters}  />}
@@ -241,13 +253,11 @@ function Catalog(props)
 
                 <div className={styles.products_container}>
                     {currentProducts.map(product => (
-                    <div key={product.id} className={styles.card_wrapper}>
+                        <div key={product.Id} className={styles.card_wrapper}>
                         <Cardproduct product={product} />
-                    </div>
+                        </div>
                     ))}
-
-
-                </div>
+                    </div>
                 <div className={styles.pagination}>
                     {getPageNumbers().map((page, i) => (
                         <span
@@ -265,7 +275,6 @@ function Catalog(props)
 
             </div>
             <Subscrabe/>
-            <OurLinks/>
         </div> 
     )
 }

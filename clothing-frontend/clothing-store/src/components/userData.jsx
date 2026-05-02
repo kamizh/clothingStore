@@ -1,54 +1,58 @@
-import styles from './userData.module.css'
-import React from 'react'
+import styles from "./userData.module.css";
+import React from "react";
 
-function MyProfile({user})
-{
+function MyProfile({ user }) {
+  const fullName =
+    `${user?.Name || ""} ${user?.Surname || ""}`.trim() || "Пользователь";
 
-   
+  const addressText =
+    user?.Adresses && user.Adresses.length > 0
+      ? `${user.Adresses[0].City || ""}${
+          user.Adresses[0].Street ? `, ${user.Adresses[0].Street}` : ""
+        }${user.Adresses[0].House ? `, ${user.Adresses[0].House}` : ""}${
+          user.Adresses[0].Apartament ? `, ${user.Adresses[0].Apartament}` : ""
+        }`.trim()
+      : "Не указано";
 
-    return (
-        <div className={styles.container}>
-            <div className={styles.container_content}>
-                <h1 className={styles.title}>Мой профиль</h1>
-                <div className={styles.data_section}>
-                    <div className={styles.data_container}>
-                        <p className={styles.header_text}>Контакты</p>
-                        <p className={styles.data_text}>{user.Email}</p>
-                    </div>
-                    <div className={styles.line}></div>
-                    <div className={styles.data_container}>
-                        <p className={styles.header_text}>Адрес доставки</p>
-                        <p className={styles.data_text}>{user.Adresses.length == 0 ? "Не указано" : user.Adresses.toString()}</p>
+  const birthText =
+    user?.BirthDay && user.BirthDay !== ""
+      ? new Date(user.BirthDay).toLocaleDateString("ru-RU")
+      : "Не указано";
 
-                    </div>
-                    <div className={styles.line}></div>
+  return (
+    <section className={styles.container}>
+      <div className={styles.container_content}>
+        <div className={styles.profile_intro}>
+          <div className={styles.avatar}>{fullName.charAt(0).toUpperCase()}</div>
 
-                    <div className={styles.data_container}>
-                        <p className={styles.header_text}>Дата рождения</p>
-                        <p className={styles.data_text}>{user.BirthDay === "" ? "Не указано" : user.BirthDay}</p>
-
-                    </div>
-                     <div className={styles.line}></div>
-
-                    <div className={styles.data_container}>
-                        <p className={styles.header_text}>Бонусы</p>
-                        <p className={styles.data_text}>{user.BonusCount}</p>
-                    </div>
-                </div>
-            </div>
+          <div className={styles.intro_texts}>
+            <p className={styles.eyebrow}>Account overview</p>
+            <h2 className={styles.title}>{fullName}</h2>
+            <p className={styles.subtitle}>{user?.Email}</p>
+          </div>
         </div>
-    )
+
+        <div className={styles.data_section}>
+          <div className={styles.data_card}>
+            <p className={styles.header_text}>Контакты</p>
+            <p className={styles.data_text}>{user?.Email}</p>
+          </div>
+
+         
+
+          <div className={styles.data_card}>
+            <p className={styles.header_text}>Дата рождения</p>
+            <p className={styles.data_text}>{birthText}</p>
+          </div>
+
+          <div className={styles.data_card}>
+            <p className={styles.header_text}>Бонусы</p>
+            <p className={styles.data_text}>{user?.BonusCount ?? 0}</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default MyProfile;
-
-/*
-{
-    "Id": 21,
-    "Name": null,
-    "Surname": null,
-    "Email": "cool@mail.ru",
-    "Adresses": [],
-    "BirthDay": "",
-    "BonusCount": 0
-} */

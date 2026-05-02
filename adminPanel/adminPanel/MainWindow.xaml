@@ -21,7 +21,6 @@
                 <Button Content="Главная" Click="BtnMain_Click" Name="BtnMain" Padding="10" Margin="10,5" Style="{StaticResource ButtonStyle}"/>
                 <Button Click="BtnProducts_Click" Content="Товары" Name="BtnProducts" Padding="10" Margin="10,5" Style="{StaticResource ButtonStyle}"/>
                 <Button Click="BtnBrands_Click" Content="Бренды" Name="BtnBrands" Padding="10" Margin="10,5" Style="{StaticResource ButtonStyle}"/>
-                <Button Content="Заказы" Name="BtnOrders" Padding="10" Margin="10,5" Style="{StaticResource ButtonStyle}"/>
                 <Button Content="Пользователи" Name="BtnUsers" Click="BtnUsers_Click" Padding="10" Margin="10,5" Style="{StaticResource ButtonStyle}"/>
                 <Button Content="Выйти" Name="BtnExit" Click="BtnExit_Click" Padding="10" Margin="10,5" Style="{StaticResource ButtonStyle}"/>
             </StackPanel>

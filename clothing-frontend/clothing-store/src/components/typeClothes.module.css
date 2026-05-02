@@ -1,39 +1,235 @@
 .type_clothes {
-    padding: 5%;
-    overflow: hidden; /* Скрываем лишний контент */
-    width: 100%;
+  width: 100%;
+  padding: 56px 32px 28px;
+  background: var(--bg);
+}
 
+.shell {
+  max-width: 1440px;
+  margin: 0 auto;
 }
-.type_clothes_content {
-    overflow-x: auto;
-    scrollbar-width: none; /* Убираем стандартный скролл (Firefox) */
-    -ms-overflow-style: none; /* Убираем стандартный скролл (IE/Edge) */
-    scroll-snap-type: x mandatory; /* При пролистывании элементы центрируются */
-    touch-action: pan-x; /* Позволяет свайпать только горизонтально */
-    display: flex;
-    gap: 1rem;
-    justify-content: flex-start; /* Важно: убираем центрирование */
-    text-align: center;
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 32px;
+  align-items: end;
+  margin-bottom: 30px;
 }
-.type_clothes_content::-webkit-scrollbar {
-    display: none; /* Убираем скролл в Chrome и Safari */
+
+.top_left {
+  max-width: 760px;
 }
-.link {
-    display:    flex;
-    justify-content: center;
-    background-color: #F1F1F1;
-    border-radius: 50%;
-    scroll-snap-align: center; /* Элементы центрируются при пролистывании */
-    width: 150px;
-    padding: 30px;
+
+.eyebrow {
+  margin: 0 0 12px;
+  color: var(--accent);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
-.text {
-    font-size: 14px;
-    text-transform: uppercase;
-    font-weight: 600;
-    color: #1D1D1D;
+
+.title {
+  margin: 0;
+  color: var(--text);
+  font-size: 48px;
+  line-height: 1;
+  letter-spacing: -0.04em;
+  font-weight: 700;
 }
+
+.top_right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.description {
+  margin: 0;
+  color: var(--text-soft);
+  font-size: 15px;
+  line-height: 1.75;
+}
+
+.all_link {
+  min-height: 48px;
+  padding: 0 20px;
+  border-radius: 999px;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: linear-gradient(180deg, #1b1b20 0%, #151519 100%);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+}
+
+.all_link:hover {
+  transform: translateY(-1px);
+  border-color: rgba(201, 169, 110, 0.35);
+  color: var(--accent);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.card {
+  position: relative;
+  min-height: 290px;
+  padding: 18px;
+  border-radius: 28px;
+  overflow: hidden;
+  text-decoration: none;
+  background:
+    radial-gradient(circle at top left, rgba(201, 169, 110, 0.08), transparent 30%),
+    linear-gradient(180deg, #17171b 0%, #121216 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.2);
+  transition: transform 0.24s ease, border-color 0.24s ease, box-shadow 0.24s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(201, 169, 110, 0.28);
+  box-shadow: 0 24px 44px rgba(0, 0, 0, 0.26);
+}
+
+.card_glow {
+  position: absolute;
+  inset: auto auto -30px -20px;
+  width: 140px;
+  height: 140px;
+  background: radial-gradient(circle, rgba(201, 169, 110, 0.16) 0%, rgba(201, 169, 110, 0) 70%);
+  pointer-events: none;
+}
+
+.image_box {
+  width: 100%;
+  height: 190px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.035);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
 .image {
-    width: 100px;
-    height: 85px;
+  max-width: 132px;
+  max-height: 132px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.card:hover .image {
+  transform: scale(1.08);
+}
+
+.card_body {
+  padding-top: 18px;
+}
+
+.text {
+  margin: 0;
+  color: var(--text);
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 650;
+}
+
+.subtext {
+  display: block;
+  margin-top: 8px;
+  color: var(--text-muted);
+  font-size: 12px;
+  line-height: 1.4;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+@media (max-width: 1280px) {
+  .grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1024px) {
+  .top {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .type_clothes {
+    padding: 34px 16px 16px;
+  }
+
+  .top {
+    gap: 18px;
+    margin-bottom: 22px;
+  }
+
+  .title {
+    font-size: 30px;
+  }
+
+  .description {
+    font-size: 14px;
+    line-height: 1.65;
+  }
+
+  .all_link {
+    min-height: 42px;
+    padding: 0 16px;
+    font-size: 11px;
+  }
+
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 14px;
+  }
+
+  .card {
+    min-height: 220px;
+    padding: 14px;
+    border-radius: 22px;
+  }
+
+  .image_box {
+    height: 132px;
+    border-radius: 16px;
+  }
+
+  .image {
+    max-width: 96px;
+    max-height: 96px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .subtext {
+    font-size: 11px;
+  }
 }

@@ -3,11 +3,19 @@
   "WorkspaceRootPath": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{323AAE6E-2010-4EA4-A7A9-F53CB25D7998}|adminPanel\\adminPanel.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\adminpanel\\adminpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{323AAE6E-2010-4EA4-A7A9-F53CB25D7998}|adminPanel\\adminPanel.csproj|solutionrelative:adminpanel\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{323AAE6E-2010-4EA4-A7A9-F53CB25D7998}|adminPanel\\adminPanel.csproj|C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminpanel\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{323AAE6E-2010-4EA4-A7A9-F53CB25D7998}|adminPanel\\adminPanel.csproj|solutionrelative:adminpanel\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{323AAE6E-2010-4EA4-A7A9-F53CB25D7998}|adminPanel\\adminPanel.csproj|C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminpanel\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{323AAE6E-2010-4EA4-A7A9-F53CB25D7998}|adminPanel\\adminPanel.csproj|solutionrelative:adminpanel\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{323AAE6E-2010-4EA4-A7A9-F53CB25D7998}|adminPanel\\adminPanel.csproj|c:\\users\\kamizh\\onedrive\\\u0440\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingstore\\adminpanel\\adminpanel\\addeditvariantpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{323AAE6E-2010-4EA4-A7A9-F53CB25D7998}|adminPanel\\adminPanel.csproj|C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminpanel\\addeditvariantpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{323AAE6E-2010-4EA4-A7A9-F53CB25D7998}|adminPanel\\adminPanel.csproj|solutionrelative:adminpanel\\addeditvariantpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -46,11 +54,35 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "adminPanel\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\MainWindow.xaml",
+              "RelativeToolTip": "adminPanel\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-02-06T11:22:09.316Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "adminPanel\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\MainWindow.xaml.cs",
+              "RelativeToolTip": "adminPanel\\MainWindow.xaml.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwDkAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-06T11:21:55.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "AddSizeWindow.xaml",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\AddSizeWindow.xaml",
               "RelativeDocumentMoniker": "adminPanel\\AddSizeWindow.xaml",
@@ -61,7 +93,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "AddEditPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\AddEditPage.xaml.cs",
               "RelativeDocumentMoniker": "adminPanel\\AddEditPage.xaml.cs",
@@ -73,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "AddSizeWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\AddSizeWindow.xaml.cs",
               "RelativeDocumentMoniker": "adminPanel\\AddSizeWindow.xaml.cs",
@@ -85,7 +117,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "VariantsPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\VariantsPage.xaml.cs",
               "RelativeDocumentMoniker": "adminPanel\\VariantsPage.xaml.cs",
@@ -97,7 +129,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "Models.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\Models\\Models.cs",
               "RelativeDocumentMoniker": "adminPanel\\Models\\Models.cs",
@@ -109,7 +141,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "CloudinaryService.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\Services\\CloudinaryService.cs",
               "RelativeDocumentMoniker": "adminPanel\\Services\\CloudinaryService.cs",
@@ -121,7 +153,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "AddEditVariantPage.xaml.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\AddEditVariantPage.xaml.cs",
               "RelativeDocumentMoniker": "adminPanel\\AddEditVariantPage.xaml.cs",
@@ -129,12 +161,11 @@
               "RelativeToolTip": "adminPanel\\AddEditVariantPage.xaml.cs",
               "ViewState": "AQIAAPYAAAAAAAAAAAAuwA8BAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-22T09:55:00.035Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-22T09:55:00.035Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "AddEditVariantPage.xaml",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\AddEditVariantPage.xaml",
               "RelativeDocumentMoniker": "adminPanel\\AddEditVariantPage.xaml",
@@ -145,16 +176,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "ApiService.cs",
               "DocumentMoniker": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\Services\\ApiService.cs",
               "RelativeDocumentMoniker": "adminPanel\\Services\\ApiService.cs",
               "ToolTip": "C:\\Users\\kamizh\\OneDrive\\\u0420\u0430\u0431\u043E\u0447\u0438\u0439 \u0441\u0442\u043E\u043B\\clothingStore\\adminPanel\\adminPanel\\Services\\ApiService.cs",
               "RelativeToolTip": "adminPanel\\Services\\ApiService.cs",
-              "ViewState": "AQIAAFMAAAAAAAAAAAAtwGUAAABGAAAA",
+              "ViewState": "AQIAADYAAAAAAAAAAAApwGwAAABYAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-12T09:18:34.781Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-12T09:18:34.781Z"
             }
           ]
         }

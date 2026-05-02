@@ -1,42 +1,86 @@
 .wrapper {
-    position: relative;
-    width: 250px;
-    font-family: sans-serif;
+  position: relative;
+  width: 100%;
+  font-family: inherit;
+  margin: 0 0 15px 0;
 }
 
 .selector {
-    border: 1px solid #ccc;
-    padding: 8px 12px;
-    background-color: #fff;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+
+  min-height: 48px;
+  padding: 0 16px;
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+  background: linear-gradient(180deg, #1b1b20 0%, #151519 100%);
+  color: var(--text-soft);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  transition: border-color 0.2s ease, color 0.2s ease, background 0.2s ease;
+}
+
+.selector:hover {
+  border-color: rgba(201, 169, 110, 0.35);
+  color: var(--text);
 }
 
 .arrow {
-    margin-left: 10px;
-    font-size: 12px;
+  margin-left: 10px;
+  font-size: 11px;
+  color: var(--text-muted);
+  flex-shrink: 0;
 }
 
 .dropdown {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background: white;
-    border: 1px solid #ccc;
-    max-height: 250px;
-    overflow-y: auto;
-    z-index: 100;
-    padding: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+  width: 100%;
+  background: linear-gradient(180deg, #17171b 0%, #121216 100%);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  max-height: 260px;
+  overflow-y: auto;
+  z-index: 100;
+  padding: 8px;
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3);
+}
+
+.dropdown::-webkit-scrollbar {
+  width: 8px;
+}
+
+.dropdown::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.dropdown::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
 }
 
 .option {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 4px 0;
-    cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 12px;
+  cursor: pointer;
+  color: var(--text-soft);
+  border-radius: 12px;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.option:hover {
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+}
+
+.option input {
+  accent-color: var(--accent);
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  flex-shrink: 0;
 }

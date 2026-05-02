@@ -44,33 +44,35 @@ function MultiSelectDropdown({ onChange }) {
     }, []);
 
     return (
-        <div className={styles.wrapper} ref={ref}>
-            <div className={styles.selector} onClick={() => setOpen(!open)}>
+    <div className={styles.wrapper} ref={ref}>
+        <div className={styles.selector} onClick={() => setOpen(!open)}>
+            <span>
                 {selected.length > 0
                     ? categories
                           .filter((c) => selected.includes(c.value))
                           .map((c) => c.label)
                           .join(', ')
-                    : 'Бренд'}
-                <span className={styles.arrow}>▾</span>
-            </div>
-
-            {open && (
-                <div className={styles.dropdown}>
-                    {categories.map((cat) => (
-                        <label key={cat.value} className={styles.option}>
-                            <input
-                                type="checkbox"
-                                checked={selected.includes(cat.value)}
-                                onChange={() => toggleItem(cat.value)}
-                            />
-                            {cat.label}
-                        </label>
-                    ))}
-                </div>
-            )}
+                    : 'Выберите бренд'}
+            </span>
+            <span className={styles.arrow}>▾</span>
         </div>
-    );
+
+        {open && (
+            <div className={styles.dropdown}>
+                {categories.map((cat) => (
+                    <label key={cat.value} className={styles.option}>
+                        <input
+                            type="checkbox"
+                            checked={selected.includes(cat.value)}
+                            onChange={() => toggleItem(cat.value)}
+                        />
+                        <span>{cat.label}</span>
+                    </label>
+                ))}
+            </div>
+        )}
+    </div>
+);
 }
 
 export default MultiSelectDropdown;

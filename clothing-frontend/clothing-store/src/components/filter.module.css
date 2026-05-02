@@ -1,135 +1,228 @@
 .filter_container {
-    width: 100%;
-    opacity: 0.8;
-    padding: 2%;
-    z-index: 1000;
-    margin-bottom: 40px;
+  width: 100%;
+  margin-bottom: 36px;
+  padding: 24px;
+  border-radius: 28px;
+  background: linear-gradient(180deg, #17171b 0%, #121216 100%);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.24);
 }
 
 .filter_container_content {
-    display: flex;
-    justify-content: center;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+.category_container,
+.size_and_price_container,
+.brands_container {
+  padding: 20px;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .title_filter {
-    color: #565656;
-    font-size: 16px;
-    font-weight: 600;
+  margin: 0 0 18px;
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
 }
 
 .checkbox_list {
   display: grid;
-    grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 14px;
 }
 
 .checkbox_item {
   display: flex;
   align-items: center;
-  font-size: 16px;
-  color: #333;
+  gap: 10px;
+  min-height: 42px;
+  padding: 10px 12px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid transparent;
+  font-size: 14px;
+  color: var(--text-soft);
   cursor: pointer;
+  transition: border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
-.checkbox_input {
-  margin-right: 10px;
+.checkbox_item:hover {
+  border-color: rgba(201, 169, 110, 0.3);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--text);
+}
+
+.checkbox_input,
+.gender_input {
+  accent-color: var(--accent);
   width: 16px;
   height: 16px;
+  margin: 0;
+  flex-shrink: 0;
+}
+
+.checkbox_label {
+  color: inherit;
+  user-select: none;
+  line-height: 1.4;
 }
 
 .size_box {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 10px;
+  margin-bottom: 26px;
 }
-
-
-.checkbox_label {
-    color: #565656;
-  user-select: none;
-}
-
 
 .price_box {
-    gap: 1em;
-    display: flex;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto minmax(0, 1fr);
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 26px;
 }
-.text_price {
-    font-size: 15px;
-    color: #333;
-    font-weight: 500;
 
+.text_price {
+  margin: 0;
+  font-size: 14px;
+  color: var(--text-soft);
+  font-weight: 500;
 }
 
 .price_input {
-    width: 120px;
-    height: 40px;
-    font-size: 15px;
-    font-weight: 500;
-    color: #333;
+  width: 100%;
+  height: 46px;
+  padding: 0 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--stroke);
+  border-radius: 14px;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
 }
 
-
-.gender_box {
-    display: flex;
-}
-
-.gender_text {
-    font-size: 15px;
-    font-weight: 400;
-    color: #333;
+.price_input:focus {
+  border-color: rgba(201, 169, 110, 0.45);
+  box-shadow: 0 0 0 3px rgba(201, 169, 110, 0.12);
 }
 
 .genders_box {
-    display: flex;
-    gap: 1em;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.gender_box {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 42px;
+  padding: 0 14px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.gender_text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-soft);
 }
 
 .brands_container {
-    margin-left: 2%;
+  margin-left: 0;
 }
 
 .buttons {
-    gap: 2em;
-    display: flex;
-    justify-content: end;
+  margin-top: 24px;
+  gap: 14px;
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+}
+
+.cancel,
+.apply {
+  min-height: 48px;
+  padding: 0 20px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease, color 0.2s ease;
 }
 
 .cancel {
-  padding: 10px 18px;
-  font-size: 14px;
-  font-weight: 500;
-  border: 1px solid #565656;
-  border-radius: 4px;
+  border: 1px solid var(--stroke);
   background-color: transparent;
-  color: #565656;
-  cursor: pointer;
-  transition: background-color 0.2s ease, color 0.2s ease;
+  color: var(--text-soft);
 }
 
 .cancel:hover {
-  background-color: #f0f0f0;
+  transform: translateY(-1px);
+  border-color: rgba(201, 169, 110, 0.35);
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.03);
 }
 
 .apply {
-  padding: 10px 18px;
-  font-size: 14px;
-  font-weight: 500;
-  border: none;
-  border-radius: 4px;
-  background-color: #565656;
-  color: white;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
+  border: 1px solid transparent;
+  background: linear-gradient(135deg, var(--accent), #b89153);
+  color: #111;
+  box-shadow: 0 10px 22px rgba(201, 169, 110, 0.18);
 }
 
 .apply:hover {
-  background-color: #333;
+  transform: translateY(-1px);
+  filter: brightness(1.03);
 }
 
-@media (max-width: 850px)
-{
-    .filter_container_content {
-        flex-direction: column;
-    }
+@media (max-width: 1100px) {
+  .filter_container_content {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 770px) {
+  .filter_container {
+    padding: 16px;
+    border-radius: 22px;
+  }
+
+  .category_container,
+  .size_and_price_container,
+  .brands_container {
+    padding: 16px;
+    border-radius: 18px;
+  }
+
+  .checkbox_list {
+    grid-template-columns: 1fr;
+  }
+
+  .price_box {
+    grid-template-columns: 1fr;
+  }
+
+  .buttons {
+    justify-content: stretch;
+  }
+
+  .cancel,
+  .apply {
+    width: 100%;
+  }
 }

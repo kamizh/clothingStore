@@ -1,8 +1,103 @@
-
 .container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
+  width: 100%;
+}
+
+.productsGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+
+.emptyState {
+  width: 100%;
+  max-width: 760px;
+  border-radius: 30px;
+  padding: 32px;
+  background:
+    radial-gradient(circle at top left, rgba(201, 169, 110, 0.08), transparent 24%),
+    linear-gradient(180deg, #17171b 0%, #101014 100%);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  box-shadow: 0 24px 50px rgba(0, 0, 0, 0.28);
+}
+
+.emptyBadge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 32px;
+  padding: 0 12px;
+  border-radius: 999px;
+  background: rgba(201, 169, 110, 0.14);
+  border: 1px solid rgba(201, 169, 110, 0.22);
+  color: #c9a96e;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 18px;
+}
+
+.emptyTitle {
+  margin: 0;
+  font-size: 42px;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+  color: #f5efe6;
+}
+
+.emptyText {
+  margin: 16px 0 0;
+  max-width: 560px;
+  color: #b9b1a5;
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.emptyActions {
+  margin-top: 28px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.emptyButton {
+  min-height: 54px;
+  padding: 0 22px;
+  border-radius: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  background: linear-gradient(135deg, #c9a96e, #b89153);
+  color: #111;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  box-shadow: 0 16px 28px rgba(201, 169, 110, 0.18);
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+
+.emptyButton:hover {
+  transform: translateY(-2px);
+}
+
+@media (max-width: 700px) {
+  .emptyState {
+    padding: 22px;
+    border-radius: 24px;
+  }
+
+  .emptyTitle {
+    font-size: 30px;
+  }
+
+  .emptyText {
+    font-size: 15px;
+  }
+
+  .emptyButton {
+    width: 100%;
+  }
 }

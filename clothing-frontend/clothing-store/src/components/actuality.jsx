@@ -1,37 +1,68 @@
-import styles from "./actuality.module.css"
+import styles from "./actuality.module.css";
 
-function Actuality()
-{
+function Actuality() {
+    const brands = [
+        "Nike",
+        "Carhartt",
+        "Stone Island",
+        "The North Face",
+        "Fred Perry",
+        "Champion",
+        "Dickies",
+        "Adidas"
+    ];
 
     return (
-        <div className={styles.actuality}>
-            <h2 className={styles.title}>
-                Актуальное
-            </h2>
+        <section className={styles.actuality}>
             <div className={styles.actuality_content}>
-                <div className={styles.left_section}>
-                    <div className={styles.card_left}>
-                        <img src="https://i.ibb.co/qtFSDNK/89309d9ee40611193f9a886d72fb96dfd7fa161b.png" alt="" className={styles.image_left} />
-                        <p className={styles.sub_title}>Джинсы</p>
-                        <p className={styles.text}>Все еще в тренде</p>
+                <div className={styles.intro_card}>
+                    <p className={styles.eyebrow}>Editorial selection</p>
+                    <h2 className={styles.title}>Актуальные силуэты, чистые формы и сильные бренды</h2>
+                    <p className={styles.description}>
+                        В подборке собраны вещи, которые легко работают в повседневном гардеробе:
+                        базовые модели, акцентные позиции и узнаваемые бренды с характером.
+                    </p>
+                </div>
 
+                <div className={styles.side_cards}>
+                    <div className={styles.info_card}>
+                        <p className={styles.card_label}>Фокус</p>
+                        <h3 className={styles.card_title}>База на каждый день</h3>
+                        <p className={styles.card_text}>
+                            Футболки, худи, рубашки, деним и верхняя одежда —
+                            основные категории, которые формируют устойчивый гардероб.
+                        </p>
                     </div>
-                    <div className={styles.card_left}>
-                        <img src="https://i.ibb.co/WW3xWmqQ/5037eac48f01f820a5f00d3e581ed45b83338092.png" alt="" className={styles.image_left} />
-                        <p className={styles.sub_title}>Новая эра</p>
-                        <p className={styles.text}>Кроссовки с высокой подошвой</p>
 
+                    <div className={styles.info_card}>
+                        <p className={styles.card_label}>Подборка</p>
+                        <h3 className={styles.card_title}>Бренды с узнаваемым почерком</h3>
+                        <p className={styles.card_text}>
+                            От спортивной классики до утилитарного streetwear —
+                            коллекция собрана вокруг сильных и понятных fashion-направлений.
+                        </p>
                     </div>
                 </div>
-                <div className={styles.right_section}>
-                    <div className={styles.right_card}>
-                    <img src="https://i.ibb.co/6cZFgWXf/661906d720699dcbe4c7feb3c4a6039d731e0e14.png" alt="" className={styles.image_right} />
-                        <p className={styles.sub_title}>Новая эра</p>
-                        <p className={styles.text}>Платья вечный</p>
+
+                <div className={styles.brand_strip}>
+                    <div className={styles.brand_strip_header}>
+                        <p className={styles.brand_eyebrow}>Selected brands</p>
+                        <p className={styles.brand_text}>
+                            Ключевые бренды, представленные в каталоге
+                        </p>
+                    </div>
+
+                    <div className={styles.brand_list}>
+                        {brands.map((brand) => (
+                            <div key={brand} className={styles.brand_chip}>
+                                {brand}
+                            </div>
+                        ))}
                     </div>
                 </div>
             </div>
-        </div>
-    )
+        </section>
+    );
 }
+
 export default Actuality;
